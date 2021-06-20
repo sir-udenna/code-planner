@@ -1,43 +1,14 @@
-import React from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
-import About from './About'
-import NavBar from './NavBar';
+import './App.css'
+import React, { useState } from 'react'
 
 function App() {
-  return (
-    <Router>
-    <div>
-      <NavBar />
-      <ul className="navbar">
-        <li>
-          <Link to="/">Dashboard</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/getstarted">Get started</Link>
-        </li>
-      </ul>
+  //eslint-disable-next-line
+  const [loginStatus, setLoginStatus] = useState(false) //used for when the login function is implemented
+  //eslint-disable-next-line
+  const [counter, setCounter] = useState(0) //Testing
 
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/getstarted">
-          <h1>Get started</h1>
-        </Route>
-        <Route path="/">
-          <h1>Dashboard</h1>
-        </Route>
-      </Switch>
-    </div>
-  </Router>
+  return (
+    <h1>SU Planner</h1>
   );
 }
 
