@@ -5,11 +5,14 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import About from './About'
+import NavBar from './NavBar';
 
 function App() {
   return (
     <Router>
     <div>
+      <NavBar />
       <ul className="navbar">
         <li>
           <Link to="/">Dashboard</Link>
@@ -24,7 +27,7 @@ function App() {
 
       <Switch>
         <Route path="/about">
-          <h1>project description</h1>
+          <About />
         </Route>
         <Route path="/getstarted">
           <h1>Get started</h1>
