@@ -4,11 +4,17 @@ import React, { useState } from 'react'
 function App() {
   //eslint-disable-next-line
   const [loginStatus, setLoginStatus] = useState(false) //used for when the login function is implemented
-  //eslint-disable-next-line
-  const [counter, setCounter] = useState(0) //Testing
+
+  //Splash page
+  //Description decsribing purpose of the app and the problem it solves
+  //Get started button to create account or create a planner on the go
 
   return (
-    <h1>SU Planner</h1>
+    <>
+      <h1>Planner Home Page title</h1>
+      <h3>Some description</h3>
+      <h3>Get started</h3>
+    </>
   );
 }
 
