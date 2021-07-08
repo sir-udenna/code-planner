@@ -1,6 +1,12 @@
 *{
+    font-size: 2.2rem;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: Garamond, serif;
+}
+
+
+#getstarted{
+    color: khaki;
 }
